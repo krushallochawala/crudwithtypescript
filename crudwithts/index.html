@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="public/app.js"></script>
+
+</head>
+<body>
+    <table align="center">
+        <form id="taskForm">
+            <tr>
+                <td>
+                    <label for="tid">TASK ID</label>
+                </td>
+                <td>
+                    <input type="text" id="tid" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tname">TASK Name</label>
+                </td>
+                <td>
+                    <input type="text" id="tname" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tstatus">Task status</label>
+                </td>
+                <td>
+                    <select name="select-status" id="tstatus">
+                        <option value="select-status">select-status</option>
+                        <option value="hold">Hold</option>
+                        <option value="active">Active</option>
+                        <option value="finished">Finished</option>
+                        
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tduration">Task duration(days)</label>
+                </td>
+                <td>
+                    <input type="date" id="tduration" />
+                    <input type="date" id="tduration1" />
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <button type="button" id="btnadd">ADD</button>
+                    <button id="btndelete" type="button">delete</button>
+                    <button id="btndisplay"  type="button">Display</button>
+                    <button id="btnupdate"  type="button">update</button>
+                </td>
+            </tr>
+        </form>
+    </table><br>
+    <div id="disp"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"/>
+
+</body>
+</html>
